@@ -1,26 +1,26 @@
 @font-face {
-    font-family: 'Titillium-R';
-    src: local('Titillium-R'), url(../fonts/TitilliumWeb-Regular.ttf) format('truetype');
+    font-family: 'Roboto-M';
+    src: local('Roboto-M'), url(../fonts/Roboto-Medium.ttf) format('truetype');
   }
 @font-face {
     font-family: 'Merriweather';
     src: local('Merriweather'), url(../fonts/Merriweather-Regular.ttf) format('truetype');  
 }
 @font-face {
-  font-family: 'Merriweather-Bold';
-  src: local('Merriweather-Bold'), url(../fonts/Merriweather-Bold.ttf) format('truetype');  
+  font-family: 'Manrope-Bold';
+  src: local('Manrope-Bold'), url(../fonts/Manrope-Bold.ttf) format('truetype');  
 }
 @font-face {
   font-family: 'Merriweather-Italic';
   src: local('Merriweather-Italic'), url(../fonts/Merriweather-Italic.ttf) format('truetype');  
 }
 @font-face {
-  font-family: 'Titillium';
-  src: local('Titillium'), url(../fonts/TitilliumWeb-Light.ttf) format('truetype');  
+  font-family: 'Roboto';
+  src: local('Roboto'), url(../fonts/Roboto-Regular.ttf) format('truetype');  
 }
 @font-face {
-font-family: 'Titillium-Bold';
-src: local('Titillium-Bold'), url(../fonts/TitilliumWeb-Bold.ttf) format('truetype');
+font-family: 'Roboto-Bold';
+src: local('Roboto-Bold'), url(../fonts/Roboto-Bold.ttf) format('truetype');
 }
   
 * {
@@ -28,13 +28,13 @@ src: local('Titillium-Bold'), url(../fonts/TitilliumWeb-Bold.ttf) format('truety
 }
 
 body{
-  font-family: 'Titillium';
+  font-family: 'Roboto';
   color: #242131;
   margin: 0;
 }
 
 header{
-  display: flex; height: 74px; padding-left: 100px; padding-right: 100px; justify-content: space-between; align-items: center;
+  display: flex; height: 100px; padding-left: 100px; padding-right: 100px; justify-content: space-between; align-items: center;
 }
 
 .menu{
@@ -44,13 +44,30 @@ header{
   overflow: hidden;
 }
 
+.footer-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .menu .icon{
   display: none;
 }
 
+.button{
+  display: flex; align-items: center; color: #FFF; padding: 14px 27px !important; border-radius: 7px;
+}
+
 .menu > span{
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-menu > span{
+  padding-left: 50px;
+  padding-right: 50px;
   display: flex;
   justify-content: center;
 }
@@ -68,9 +85,9 @@ header{
 }
 
 ::placeholder{
-  color: #071A2D;
-  font-size: 20px;
-  font-family: Titillium;
+  color: #8D9499;
+  font-size: 16px;
+  font-family: Roboto;
 }
 
 .slider{
@@ -117,10 +134,6 @@ header{
   background-size: cover;
 }
 
-.button{
-  display: flex; align-items: center; color: #FFF; padding: 11px 15px; border-radius: 7px;
-}
-
 .billboard{
   padding: 100px 100px 60px ;
   display: flex;
@@ -157,7 +170,6 @@ header{
   header{
     padding-left: 60px; padding-right: 60px;
   }
-
   .imagepro{
     padding-left: 60px; padding-right: 60px;
   }
@@ -262,7 +274,20 @@ header{
     margin-left: 0;
     margin-bottom: 15px;
   }
+  .footer{
+    flex-direction: column;
+    height: unset;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .footer-list > div {
     width: 100%;
+  }
+  .footer-menu {
+    flex-direction: column;
+  }
+  .footer-menu > span, .footer-menu > div{
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
