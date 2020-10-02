@@ -58,11 +58,28 @@ header{
   display: flex; align-items: center; color: #FFF; padding: 14px 27px !important; border-radius: 7px;
 }
 
+.button:hover{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
 .menu > span{
   padding-left: 50px;
   padding-right: 50px;
   display: flex;
   justify-content: center;
+}
+
+.menu > span:hover{
+  background-color: #04B70F;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 30px;
+  margin-left: 30px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 7px;
+  color: #FFF !important;
 }
 
 .footer-menu > span{
