@@ -158,6 +158,9 @@ header{
 .title{
   font-size: 48px; 
 }
+.icon-logo{
+  margin-right: 28px;
+}
 
 @media only screen and (max-width: 768px) {
   /* For pads: */
@@ -243,6 +246,9 @@ header{
   /*For smart phones*/
   header{
     padding-left: 40px; padding-right: 40px;
+  }
+  .icon-logo{
+    display: none;
   }
   .tab{
     width: 100%; 
